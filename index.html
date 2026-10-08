@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Math Quest - adaptive math practice from arithmetic through pre-algebra.">
+  <title>Math Quest — Adaptive Math</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" id="mathQuest">
+    <header class="topbar">
+      <div>
+        <h1>⚔️ Math Quest</h1>
+        <p>Adaptive math learning</p>
+      </div>
+      <div class="stats">
+        <div class="stat">⭐ XP <strong id="xp">0</strong></div>
+        <div class="stat">🔥 Streak <strong id="streak">0</strong></div>
+        <div class="stat">🎯 Mastery <strong id="mastery">0%</strong></div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>📚 Curriculum</h2>
+        <p class="muted">Choose a math strand.</p>
+        <div id="topics"></div>
+      </aside>
+
+      <main class="main">
+        <section id="curriculum" class="panel"></section>
+
+        <section id="practice" class="panel practice hidden" aria-live="polite">
+          <button class="back-button" id="backButton" type="button">← Back to lessons</button>
+          <p class="muted" id="practiceSkill"></p>
+          <div class="question" id="question"></div>
+          <div class="answers" id="answers"></div>
+          <div class="feedback" id="feedback"></div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <span>Math Quest</span>
+      <span>Your progress is saved in this browser.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
